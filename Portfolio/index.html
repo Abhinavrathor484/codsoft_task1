@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0c95e57dc9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <h3 class="logo">Portfolio</h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    
+                    <li><a href="#content">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Coder And Developer</p>
+                <h1>Hi, I'm <span>Abhinav</span><br>Rathor From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------About--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>I am a talented and dynamic individual who
+                        possesses a unique blend of skills in the world of
+                        coding and web development. I also shine in the
+                        realm of communication with exceptional speaking
+                        and communication skills and can effortlessly
+                        connect with others.
+                    </p>
+                    <div class="tab-title">
+                        <p class="Tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="Tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="Tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="Skills">
+                        <ul>
+                            <li><span>Coder</span><br>Learning DSA</li>
+                            <li><span>Web Developer</span> <br>Building Web Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Technical member of TechWiz</li>
+                            <li><span>2023-current</span> <br>content Member at FLC</li>
+                            <li><span>2022 </span><br>completed js and react at devtown</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019</span><br>completed 10th standard at St.xavier's School</li>
+                            <li><span>2021</span> <br>completed 12th standard at Sri Chaitanya college</li>
+                            <li><span>2021-current</span><br>Studing at SRM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Personal Skills</h2>
+                    <p>Problem-Solving, Eye for Details, Time Management, 
+                        Multi-tasking, Team Coordination , Quick learner, Tech savy
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-arrows-to-circle"></i>
+                    <h2>Content Writter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, omnis asperiores alias ea
+                        numquam nulla aperiam ex qui amet ut.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div> -->
+                <div>
+                    <i class="fa-sharp fa-solid fa-lightbulb"></i>
+                    <h2>Technical Skills</h2>
+                    <p> C, Python, Web development, HTML, CSS, Javascript    
+                        Microsoft Office, CPP
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Portfolio-------------->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+
+            </div>
+        </div>
+    </div> -->
+    <!---------Content---------->
+    <div id="content"> 
+        <div class="container">
+            <div class="row">
+            <div class="contact-left"><h1 class="sub-tittle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>rathorabhinav2004@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7520161488</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1UvhIKO_3Y7eZ9r3GpBdDvSp-6ZWka7QU?usp=drive_link " class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Made By Abhinav</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("Tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+</body>
+
+</html>
